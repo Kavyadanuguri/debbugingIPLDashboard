@@ -1,3 +1,4 @@
+import {Link} from 'react-router-dom'
 import './index.css'
 
 const TeamCard = props => {
@@ -5,10 +6,12 @@ const TeamCard = props => {
   const {name, id, teamImageURL} = teamDetails
 
   return (
-    <li className="team-item">
-      <Link exact path={`/team/${id}`} className="link-item">
-        <img src={teamImageURL} alt={name} className="team-logo" />
-        <p className="team-name">{name}</p>
+    <li className="li" key={id}>
+      <Link to={`/team-matches/${id}`} className="team-item">
+        <div className="link">
+          <img src={teamImageURL} alt={name} className="team-logo" />
+          <p className="team-name">{name}</p>
+        </div>
       </Link>
     </li>
   )

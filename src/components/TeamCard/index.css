@@ -1,13 +1,16 @@
 .team-item {
-  list-style-type: none;
-  width: 50%;
+  text-decoration: none;
 }
-
+.li {
+  list-style-type: none;
+}
 .link {
   display: flex;
+  list-style-type: none;
   align-items: center;
   background-color: #ffffff33;
   height: 85%;
+  width: 400px;
   border-radius: 12px;
   border: 1px solid #ffffff;
   padding-left: 7px;
@@ -57,11 +60,13 @@
   font-family: 'Bree Serif';
   font-size: 12px;
   margin-left: 4px;
+  list-style-type: none;
 }
 
 @media screen and (min-width: 768px) {
   .team-name {
-    font-size: 32px;
+    font-size: 25px;
     margin-left: 16px;
+    list-style-type: none;
   }
 }
